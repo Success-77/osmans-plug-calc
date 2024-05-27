@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Yanone+Kaffeesatz:wght@200..700&display=swap");
+
+.App {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.Home {
+  margin: auto;
+  width: 60%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Navbar Styles */
+.navbar {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+  box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 6px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar nav {
+  width: 30%;
+}
+.navbar nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-item Link {
+  text-decoration: none;
+  color: black;
+}
+
+.list-item Link:hover {
+  color: powderblue;
+  transition: 0.5s;
+}
+
+/* Homepage Styles */
+.form {
+  width: 60%;
+  margin: 4rem auto;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 2rem 4rem;
+  border-radius: 12px;
+  color: #282c34;
+}
+
+.home-header {
+  font-weight: 900;
+  font-size: xx-large;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin: 5rem auto;
+}
+.sub-header {
+  font-weight: 900;
+  font-size: large;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin: 0 auto;
+}
+
+.input-sales {
+  width: 90%;
+  margin: auto;
+}
+
+.input-sales label {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: bold;
+}
+
+.sales-header {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  text-transform: uppercase;
+}
+
+.sales-header span {
+  border-bottom: 2px solid black;
+}
+
+#day_sales {
+  width: 90%;
+  height: 2.5rem;
+  text-align: center;
+  margin: 2rem 0;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: bold;
+  font-size: large;
+}
+
+.submit-button {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+.copy {
+  width: 20%;
+  height: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: medium;
+  background-color: transparent;
+  border-radius: 8px;
+  margin: 2rem 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.copy:hover {
+  background-color: black;
+  color: whitesmoke;
+  transition: 0.6s;
+}
+
+.tabs {
+  width: 45%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 8rem auto;
+}
+
+.tab-button {
+  width: 40%;
+  padding: 1rem 0;
+  border-radius: 12px;
+  background-color: transparent;
+  border: 2px solid black;
+  color: black;
+  font-size: medium;
+}
+
+.tab-button:hover {
+  background-color: transparent;
+  border: none;
+  color: white;
+  background-color: green;
+  font-weight: 600;
+}
+
+.remove {
+  display: none;
+}
+
+.tab-clicked {
+  margin: 2rem auto;
+  transition: margin 2s ease-in-out; /* Add transition for margin */
+}
+
+.move-header {
+  margin: 2rem auto 1rem;
+  transition: margin 2s ease-in-out; /* Add transition for margin */
+}
+
+.active {
+  background-color: transparent;
+  border: 2px solid black;
+  color: black;
+  font-weight: 600;
+}
+
+.totalAmt {
+  margin: 1rem auto;
+}
+@media screen and (max-width: 600px) {
+  .Home {
+    width: 95%;
+  }
+
+  .home-header {
+    font-size: larger;
+  }
+
+  #day_sales {
+    width: 100%;
+    height: 2rem;
+    font-size: small;
+  }
+
+  .input-sales label {
+    font-size: small;
+  }
+
+  .copy {
+    width: 35%;
+    font-size: medium;
+    color: whitesmoke;
+    background-color: green;
+  }
+
+  .tabs {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8rem auto;
+  }
+
+  .tab-button {
+    width: 100%;
+    padding: 0.8rem 0;
+    border-radius: 12px;
+    border: none;
+    background-color: green;
+    color: whitesmoke;
+    font-size: medium;
+    margin: 1rem auto;
+  }
+
+  .tab-clicked {
+    margin: 0 auto;
+    transition: margin 2s ease-in-out; /* Add transition for margin */
+  }
+
+  .sales-header {
+    width: 80%;
+    margin: 1rem auto;
+  }
+
+  .form {
+    width: 80%;
+    margin: 2rem auto;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 2rem 4rem;
+    border-radius: 12px;
+    color: #282c34;
+  }
+
+  .brand-name {
+    font-size: small;
+  }
+}
