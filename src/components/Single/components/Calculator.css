@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Yanone+Kaffeesatz:wght@200..700&display=swap");
+
+.main-container {
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  flex-direction: row;
+  width: 100%;
+}
+
+.form-container,
+.packs-container {
+  width: 40%;
+  margin: 2rem auto;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 2rem 4rem;
+  border-radius: 12px;
+  color: #282c34;
+}
+
+.form-container {
+  padding: 2rem 4rem 3rem;
+}
+.packs-container {
+  padding: 5rem 3.5rem;
+}
+
+.copy {
+  width: 7rem;
+  height: 2.5rem;
+  border-radius: 5px;
+  border: none;
+  margin: 2rem auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.copy img {
+  width: 30px;
+  background-color: transparent;
+  padding: 0.3rem;
+}
+
+.copy span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: medium;
+  color: #282c34;
+  padding: 0.3rem;
+}
+
+.copy:hover {
+  transition: 0.3s;
+  opacity: 0.6;
+}
+
+.copied {
+  text-align: center;
+  color: red;
+}
+.totalAmt {
+  margin: 1rem auto;
+}
+
+.guide {
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+}
+
+.error {
+  color: red;
+  margin: 0;
+}
+
+.coming-soon {
+  margin: auto;
+}
+@media screen and (max-width: 768px) {
+  .sub-header {
+    margin: 2rem 0;
+    font-size: large;
+  }
+
+  .form {
+    flex-direction: column;
+  }
+
+  .form-container,
+  .packs-container {
+    width: 80%;
+    margin: 2rem auto;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 2rem;
+    border-radius: 12px;
+    color: #282c34;
+  }
+}

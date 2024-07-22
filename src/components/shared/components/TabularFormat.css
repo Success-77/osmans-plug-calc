@@ -1,0 +1,21 @@
+.sales-header {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  text-transform: uppercase;
+}
+
+.sales-header span {
+  border-bottom: 2px solid black;
+  margin-bottom: 1rem;
+  font-size: large;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  .sales-header {
+    width: 80%;
+    margin: 1rem auto;
+  }
+}

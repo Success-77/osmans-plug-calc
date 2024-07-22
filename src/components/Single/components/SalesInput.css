@@ -1,0 +1,32 @@
+.input-sales {
+  width: 90%;
+  margin: auto;
+}
+
+#floatingInput {
+  margin: 0;
+}
+
+.small-text {
+  font-size: medium;
+  margin: 1.5rem 0 1rem;
+}
+
+/* Increase select field height */
+.form-select {
+  height: 3.5rem; /* Adjust the height as needed */
+}
+
+@media screen and (max-width: 768px) {
+  #floatingInput {
+    font-size: small;
+  }
+
+  .input-sales label {
+    font-size: small;
+  }
+
+  .small-text {
+    font-size: small;
+  }
+}
