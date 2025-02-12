@@ -1,4 +1,4 @@
 export const serverDetails = {
-  number: "0549889899",
-  momoName: "Prince Agyiri",
+  number: "0531310282",
+  momoName: "Isaac Asare",
 };
